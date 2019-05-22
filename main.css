@@ -97,19 +97,19 @@ body {
 #fullpage {}
 
 div.section:nth-of-type(1) {
-  background: #b45865;
+  background: url(img/img1.jpg);
 }
 
 div.section:nth-of-type(2) {
-  background: #8577E1;
+  background: url(img/img2.jpg);
 }
 
 div.section:nth-of-type(3) {
-  background: #E15F4B;
+  background: url(img/img3.jpg);
 }
 
 div.section:nth-of-type(4) {
-  background: #32C465;
+  background: url(img/img4.jpg);
 }
 
 .section {
