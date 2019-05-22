@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a data-menuanchor="block1" href="#block1">Block 1</a>
+      <a data-menuanchor="block2" href="#block2">Block 2</a>
+      <a data-menuanchor="block3" href="#block3">Block 3</a>
+      <a data-menuanchor="block4" href="#block4">Block 4</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars "></i>
+      </a>
+      <a href="javascript:void(0);" class="icon-close" onclick="myFunction()">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
+  </nav>
+
+  <div id="fullpage">
+    <div class="section" data-anchor="block1">
+      <img src="img/img1.jpg" alt="">
+      <div class="intro">
+        <h1>FLEXIBLE</h1>
+        <p>Put not limits to yourself</p>
+        <p>Use parallax even without scroll bar!</p>
+      </div>
+    </div>
+    <div class="section" data-anchor="block2">
+      <img src="img/img2.jpg" alt="">
+    </div>
+    <div class="section" data-anchor="block3">
+      <img src="img/img3.jpg" alt="">
+    </div>
+    <div class="section" data-anchor="block4">
+      <img src="img/img4.jpg" alt="">
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/jquery.fullPage.min.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        anchors: ['block1', 'block2', 'block3', 'block4'],
+        menu: '#menu',
+        css3: true,
+        scrollingSpeed: 1000,
+
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
