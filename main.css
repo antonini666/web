@@ -96,32 +96,26 @@ body {
 
 #fullpage {}
 
-div.section:nth-of-type(1) {
+.section:nth-child(1) {
   background: url(img/img1.jpg);
   background-position: center;
   background-size: cover;
 }
 
-div.section:nth-of-type(2) {
+.section:nth-child(2) {
   background: url(img/img2.jpg);
   background-position: center;
   background-size: cover;
 }
 
-div.section:nth-of-type(3) {
+.section:nth-child(3) {
   background: url(img/img3.jpg);
   background-position: center;
   background-size: cover;
 }
 
-div.section:nth-of-type(4) {
+.section:nth-child(4) {
   background: url(img/img4.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.section {
-  text-align: center;
-  font-size: 3em;
-  height: 100vh;
 }
